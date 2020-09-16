@@ -5,7 +5,7 @@ $(document).ready(function()
         
         mittEvent.preventDefault();
 
-        $.get('books.json', function(minaData)
+        $.getJSON('books.json', function(minaData)
         {
             $(minaData).find('book').each(function()
             {
@@ -31,7 +31,7 @@ $(document).ready(function()
             });
         });
 
-        $('#showBooks').prop("disabled", true);
+        //$('#showBooks').prop("disabled", true);
     });
 
 });
